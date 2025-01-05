@@ -3,38 +3,20 @@ import imageContact from './Images/communication-concept-with-email-message-box-
 
 export default function Contacts() {
   return (
-    <div className='container py-5'>
+    <div className='container contact py-5'>
       <h2 className='text-center text-info my-5'>Contact Us</h2>
-       <div className="row w-75 m-auto">
+      <div className="row w-75 m-auto">
         <div className='col-md-6 col-sm-12'>
           <div>
-          <div className="row">
-    <form className="col s12">
-      <div className="row">
-        <div className="input-field col s6">
-          <input  id="first_name" type="text" className="validate"/>
-          <label for="first_name">First Name</label>
-        </div>
-        <div className="input-field col s6">
-          <input id="last_name" type="text" className="validate"/>
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
-      <div className="row">
-        <div className="input-field col s12">
-          <input id="email" type="email" className="validate"/>
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div className="row">
-        <div className="input-field col s12">
-        <textarea id="message" class="materialize-textarea"></textarea>
-        <label for="message">Message</label>
-        </div>
-      </div>
-      <button className='btn btn-outline-info'>Send Message</button>
-    </form>
-  </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <button className='btn btn-outline-info my-3'>Send Message</button>
+            </div>
           </div>
         </div>
         <div className='col-md-6 col-sm-12'>
@@ -42,7 +24,7 @@ export default function Contacts() {
             <img className='w-100' src={imageContact} alt="" />
           </div>
         </div>
-       </div>
+      </div>
 
     </div>
   )
