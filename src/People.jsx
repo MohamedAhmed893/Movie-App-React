@@ -19,7 +19,7 @@ const {data} =await axios(`https://api.themoviedb.org/3/trending/person/week?api
 
 
   return (
-    <>
+    <div className='container'>
     {PeopleData.length>0 ?  <div className="row py-5 px-4 gy-4 d-flex  justify-content-center">
       <div className='py-5'>
           <h2 className='h3 text-center'>Tranding <br /> People<br /> </h2>
@@ -43,6 +43,6 @@ const {data} =await axios(`https://api.themoviedb.org/3/trending/person/week?api
     {nums.map((ele,i)=> <li key={i} onClick={()=>getPeople(ele)} className="page-item"><a className="page-link  bg-transparent" >{ele}</a></li>)}
   </ul>
 </nav>
-    </>
+    </div>
   )
 }

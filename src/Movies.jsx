@@ -15,7 +15,7 @@ export default function Movies() {
     getTrandingMovie(1)
   }, [])
   return (
-    <>
+    <div className="container">
       {TrandingMovie.length>0?<div className='container-fluid py-5'>
         <div className='py-5'>
           <h2 className='h3 text-center'>Tranding <br /> Movies<br /> </h2>
@@ -38,6 +38,6 @@ export default function Movies() {
     {nums.map((ele ,i)=>  <li key={i} onClick={()=>getTrandingMovie(ele)} className="page-item"><a className="page-link bg-transparent">{ele}</a></li>)}
   </ul>
 </nav>
-    </>
+    </div>
   )
 }

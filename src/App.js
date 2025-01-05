@@ -1,5 +1,5 @@
 
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
 import NotFound from './NotFound';
@@ -15,6 +15,8 @@ import About from './About';
 import Contacts from './Contacts';
 import TvDetails from './TvDetails';
 import PeopleDetail from './PeopleDetail';
+import { PopularContextProvider } from './Context/conext';
+import Footer from './Footer';
 
 
 
@@ -31,19 +33,18 @@ export default function App() {
     setData(decodedData)
   }
 
-  function ProtectedRoutes(props) {
-    if (localStorage.getItem('encodedToken') === null) {
-      return <Navigate to="/login" />
-    } else {
-      return props.children
-    }
-  }
+  // function ProtectedRoutes(props) {
+  //   if (localStorage.getItem('encodedToken') === null) {
+  //     return <Navigate to="/login" />
+  //   } else {
+  //     return props.children
+  //   }
+  // }
 
   function logout() {
     setData(null)
     localStorage.removeItem('encodedToken')
     navigate('/login')
-
   }
 
   useEffect(() => {
@@ -54,9 +55,10 @@ export default function App() {
 
   return (
     <div>
+      <PopularContextProvider>
       <Navbar logout={logout} Data={dataOfUser} />
 
-      <div className='container'>
+      <div className='container-fluid'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='home' element={<Home />} />
@@ -82,7 +84,8 @@ export default function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
-
+      <Footer/>
+      </PopularContextProvider>
     </div>
   )
 }

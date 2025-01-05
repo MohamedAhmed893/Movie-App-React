@@ -19,7 +19,7 @@ export default function MovieDetail() {
         getDetail(params.id)
     }, [])
     return (
-        <>
+        <div className='container'>
             {movieDetail?<div className="row py-5 g-4 px-4">
                 <div className="col-lg-3 col-md-4 col-sm-12">
                  <div className="inner">
@@ -40,6 +40,6 @@ export default function MovieDetail() {
                     </div>
                 </div>
             </div>:<div className='vh-100 d-flex align-items-center justify-content-center'><i className='fas fa-spinner fa-spin fs-2 iconColor'></i></div>}
-        </>
+        </div>
     )
 }

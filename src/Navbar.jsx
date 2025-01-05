@@ -17,6 +17,9 @@ export default function Navbar(props) {
                                 <Link className="nav-link" aria-current="page" to="home">Home</Link>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link" aria-current="page" to="about">About</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="movies">Movies</Link>
                             </li>
                             <li className="nav-item">
@@ -25,9 +28,7 @@ export default function Navbar(props) {
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="tv">Tv</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" aria-current="page" to="about">About</Link>
-                            </li>
+                           
                             <li className="nav-item">
                                 <Link className="nav-link" aria-current="page" to="contacts">Contacts</Link>
                             </li>

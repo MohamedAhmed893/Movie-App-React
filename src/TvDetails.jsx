@@ -16,7 +16,7 @@ export default function TvDetails() {
     getData(params.id)
   },[])
   return (
-   <>
+   <div className='container'>
    {TvDetails?<div className="row py-5">
     <div className="col-lg-3 col-md-4 col-sm-12 px-4">
       <div className="inner">
@@ -37,6 +37,6 @@ export default function TvDetails() {
                         </div>
                     </div>
    </div>:<div className='vh-100 d-flex align-items-center justify-content-center'><i className='fas fa-spinner fa-spin fs-2 iconColor'></i></div>}
-   </>
+   </div>
   )
 }

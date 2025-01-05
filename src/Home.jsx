@@ -1,29 +1,17 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+
+import React, { useContext } from 'react'
 import avatar from '../src/./Images/iEaScdyz6POUjtRaO5hTODYjsuV.jpg'
 import { Link } from 'react-router-dom'
+import { populerThings } from './Context/conext'
 
 
 export default function Home() {
-  let [TrandingMovie, setTrandingMovie] = useState([])
-  let [TrandingTv, setTrandingTv] = useState([])
-  let [TrandingPeople, setTrandingPeople] = useState([])
-
-  async function getTrandingData(trend, callBack) {
-    let { data } = await axios.get(`https://api.themoviedb.org/3/trending/${trend}/week?api_key=cf6e1e93ce151ae9136d1dd00b931342`)
-    callBack(data.results.slice(0, 10))
-  }
-
-  useEffect(() => {
-    getTrandingData('movie', setTrandingMovie)
-    getTrandingData('tv', setTrandingTv)
-    getTrandingData('person', setTrandingPeople)
-  }, [])
+      let {TrandingMovie ,TrandingPeople ,TrandingTv}=useContext(populerThings)
   return (
     <>
       {(TrandingMovie.length <= 0 || TrandingPeople.length <= 0 || TrandingTv.length <= 0) ?
         <div className='vh-100 d-flex align-items-center justify-content-center'><i className='fas fa-spinner fa-spin fs-1 iconColor'></i></div> :
-        <div className='container-fluid'>
+        <div className='container'>
           <div className="row py-5 gy-4 px-4">
             <div className='col-lg-4 col-md-6 d-flex align-items-center '>
               <div className=' w-100'>

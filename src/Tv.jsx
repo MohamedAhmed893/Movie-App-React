@@ -15,7 +15,7 @@ useEffect(()=>{
 },[])
 
   return (
-    <>
+    <div className='container'>
     {TvData.length>0 ?  <div className="row py-5 px-4 gy-4 d-flex  justify-content-center">
       <div className='py-5'>
           <h2 className='h3 text-center'>Tranding <br /> Tv<br /> </h2>
@@ -38,6 +38,6 @@ useEffect(()=>{
     {nums.map((ele,i)=> <li key={i} onClick={()=>getTvData(ele)} className="page-item"><a className="page-link  bg-transparent" >{ele}</a></li>)}
   </ul>
 </nav>
-    </>
+    </div>
   )
 }

@@ -53,3 +53,24 @@ ul{
 .custom-link:hover{
   color:#074653 ;
 }
+.text-color{
+  background-color:#3B5998;
+  color: #fff;
+}
+
+.footer p{
+  color:rgba(255, 255, 255, .5);
+}
+.footer a{
+  color:rgba(255, 255, 255, .5) !important;
+  text-decoration: underline;
+  transition: color .5s;
+}
+.footer a:hover{
+  color: #0dcaf0 !important;
+}
+.footer .line{
+  background-color: #0dcaf0;
+  width: 20%;
+  height: 2px;
+}
