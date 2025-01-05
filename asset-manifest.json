@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Movie-App-React/static/css/main.d313e6e4.css",
+    "main.js": "/Movie-App-React/static/js/main.0a191d52.js",
+    "static/media/fa-solid-900.ttf": "/Movie-App-React/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/Movie-App-React/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/Movie-App-React/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/Movie-App-React/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/About-timeline-img-1.jpg": "/Movie-App-React/static/media/About-timeline-img-1.53a6e162ccadb49305e5.jpg",
+    "static/media/fa-regular-400.ttf": "/Movie-App-React/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/communication-concept-with-email-message-box-and-contacts-icons-connection-with-modern-network-technology-contact-us-business-communication-without-borders-customer-suppo.jpg": "/Movie-App-React/static/media/communication-concept-with-email-message-box-and-contacts-icons-connection-with-modern-network-technology-contact-us-business-communication-without-borders-customer-suppo.cc4132524b25fdaf2421.jpg",
+    "static/media/logo-cinema-1.png": "/Movie-App-React/static/media/logo-cinema-1.2f30eb5eaad310a1deff.png",
+    "static/media/fa-regular-400.woff2": "/Movie-App-React/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/About-prize-img.png": "/Movie-App-React/static/media/About-prize-img.ea2853197801a6e3ab2f.png",
+    "static/media/fa-v4compatibility.ttf": "/Movie-App-React/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Movie-App-React/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/Movie-App-React/index.html",
+    "main.d313e6e4.css.map": "/Movie-App-React/static/css/main.d313e6e4.css.map",
+    "main.0a191d52.js.map": "/Movie-App-React/static/js/main.0a191d52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d313e6e4.css",
+    "static/js/main.0a191d52.js"
+  ]
+}
